@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "540529431170",
+    "project_id": "ride-clicker-proplus",
+    "storage_bucket": "ride-clicker-proplus.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540529431170:android:8ee95e2de73e0c66ad9a9b",
+        "android_client_info": {
+          "package_name": "com.rideclicker.proplus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkXJ7SwjETXJG0Fcep17-MZmlblztrpgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540529431170:android:8ee95e2de73e0c66ad9a9c",
+        "android_client_info": {
+          "package_name": "com.rideclicker.proplus.admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkXJ7SwjETXJG0Fcep17-MZmlblztrpgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540529431170:android:8ee95e2de73e0c66ad9a9d",
+        "android_client_info": {
+          "package_name": "com.monkey.privileged.api"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkXJ7SwjETXJG0Fcep17-MZmlblztrpgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

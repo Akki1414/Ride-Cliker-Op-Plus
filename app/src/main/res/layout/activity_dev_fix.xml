@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a0a0c"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:padding="4dp"
+                android:background="?android:selectableItemBackground"
+                android:src="@android:drawable/ic_menu_revert"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:text="Hide Developer Options"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <!-- Target Application Card -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#1a1a1e"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TARGET APPLICATION"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#f5d000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Ola Driver App"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="com.olacabs.oladriver"
+                android:textSize="13sp"
+                android:textColor="#8e8e93" />
+        </LinearLayout>
+
+        <!-- Shizuku Status Card -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#1a1a1e"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SHIZUKU SERVICE STATUS"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#8e8e93" />
+
+                <TextView
+                    android:id="@+id/tvShizukuStatusBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#2c2c2e"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    android:text="Inactive"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff3b30" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvShizukuDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Checking Shizuku status..."
+                android:textSize="14sp"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btnShizukuReq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Grant / Request Shizuku Permission"
+                android:textSize="13sp"
+                android:textColor="#f5d000"
+                android:backgroundTint="#2c2c2e" />
+        </LinearLayout>
+
+        <!-- Developer Options Control Card -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#1a1a1e"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DEVELOPER OPTIONS CONTROL"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#f5d000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Execute Fix Actions"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Hides developer options setting (development_settings_enabled 0) and stops Ola Driver so it reloads without Developer Options warning while keeping Shizuku active."
+                android:textSize="12sp"
+                android:textColor="#8e8e93" />
+
+            <Button
+                android:id="@+id/btnHideDevOptions"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:text="Hide Dev Options &amp; Reset App"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:backgroundTint="#f5d000" />
+
+            <Button
+                android:id="@+id/btnRestoreDevOptions"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:text="Restore Developer Options"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:backgroundTint="#2c2c2e" />
+        </LinearLayout>
+
+        <!-- Execution Log Card -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#121215"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXECUTION LOG"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#8e8e93" />
+
+            <TextView
+                android:id="@+id/tvExecutionLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ready for action."
+                android:textSize="12sp"
+                android:textColor="#30d158"
+                android:fontFamily="monospace" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

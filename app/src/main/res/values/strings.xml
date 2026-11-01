@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ride Clicker Pro+</string>
+    <string name="accessibility_service_label">Ride Clicker Pro+ Engine</string>
+    <string name="notification_listener_label">Ride Clicker Notification Monitor</string>
+    <string name="service_name">Ride Clicker Pro+ Service</string>
+    <string name="service_desc">Automated ultra-low latency ride acceptance service for driver partners.</string>
+
+    <string name="auto_accept_running">Auto Accept Running</string>
+    <string name="monitoring_rides">Monitoring for rides…</string>
+    <string name="notification_channel">Auto Accept Service</string>
+    <string name="service_running">Service Running</string>
+    <string name="service_stopped">Service Stopped</string>
+    <string name="accessibility_enabled">Accessibility: Enabled</string>
+    <string name="accessibility_disabled">Accessibility: Disabled</string>
+    <string name="overlay_granted">Overlay: Granted</string>
+    <string name="overlay_denied">Overlay: Denied</string>
+    <string name="enable_accessibility">Enable Accessibility</string>
+    <string name="enable_overlay">Enable Overlay</string>
+    <string name="enable_fare_filter">Enable Fare Filter</string>
+    <string name="fare_filter">Fare Filter</string>
+    <string name="filter_enabled">Filter Enabled</string>
+    <string name="filter_disabled">Filter Disabled</string>
+    <string name="min_fare">Min Fare (₹)</string>
+    <string name="max_fare">Max Fare (₹)</string>
+    <string name="save_filter">Save Filter</string>
+    <string name="click_speed">Click Speed</string>
+    <string name="click_interval">Click interval (ms)</string>
+    <string name="save_speed">Save Speed</string>
+    <string name="select_app">Select Target App</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="open_dashboard">Open Dashboard</string>
+    <string name="title_dashboard">⚙️ Dashboard</string>
+</resources>

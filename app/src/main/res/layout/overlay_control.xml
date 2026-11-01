@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/overlay_background"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:elevation="12dp"
+    android:focusable="true"
+    android:clickable="true">
+
+    <ImageButton
+        android:id="@+id/btnToggle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@android:drawable/presence_online"
+        android:scaleType="centerInside"
+        android:contentDescription="Toggle service"
+        android:layout_marginEnd="8dp" />
+
+    <ImageButton
+        android:id="@+id/btnDashboard"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_edit"
+        android:scaleType="centerInside"
+        android:contentDescription="Open dashboard"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/tvFareRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No filter"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@color/ola_yellow"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+</LinearLayout>

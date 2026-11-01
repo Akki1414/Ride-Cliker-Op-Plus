@@ -1,0 +1,56 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+}
+
+plugins {
+    id("idea")
+}
+
+idea.module {
+    excludeDirs += file('out')
+}
+
+subprojects {
+    plugins.withId("com.android.base") {
+        android {
+            compileSdk = 35
+            ndkVersion = "27.0.12077973"
+            defaultConfig {
+                minSdk = 24
+                targetSdk = 34
+            }
+            compileOptions {
+                sourceCompatibility = JavaVersion.VERSION_17
+                targetCompatibility = JavaVersion.VERSION_17
+            }
+        }
+    }
+}
+
+apply from: 'api/manifest.gradle'
+def gitCommitId = "monkey"
+def gitCommitCount = 1047
+try {
+    def procId = 'git rev-parse --short HEAD'.execute([], project.rootDir)
+    procId.waitFor()
+    if (procId.exitValue() == 0 && procId.text.trim().length() > 0) {
+        gitCommitId = procId.text.trim()
+    }
+    def procCount = 'git rev-list --count HEAD'.execute([], project.rootDir)
+    procCount.waitFor()
+    if (procCount.exitValue() == 0 && procCount.text.trim().length() > 0) {
+        gitCommitCount = Integer.parseInt(procCount.text.trim())
+    }
+} catch (Exception ignored) {
+}
+def baseVersionName = "${api_version_major}.6.0"
+ext {
+    versionCode = gitCommitCount
+    versionName = "${baseVersionName}.r${gitCommitCount}.${gitCommitId}"
+}

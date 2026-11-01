@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlay_container"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/overlay_background"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:elevation="12dp">
+
+    <!-- Active/Inactive Status Toggle Button -->
+    <ImageButton
+        android:id="@+id/btn_overlay_toggle"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@android:drawable/presence_online"
+        android:scaleType="centerInside"
+        android:contentDescription="Toggle Auto Accepter"
+        android:layout_marginEnd="6dp" />
+
+    <!-- Active Status / Filter Info Text (Non-clickable) -->
+    <TextView
+        android:id="@+id/tv_overlay_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🟢 ACTIVE"
+        android:textColor="#00E676"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Settings / Filters Icon Button -->
+    <ImageButton
+        android:id="@+id/btn_overlay_settings"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_manage"
+        android:scaleType="centerInside"
+        android:tint="#FFD600"
+        android:contentDescription="Open Filters" />
+
+</LinearLayout>
